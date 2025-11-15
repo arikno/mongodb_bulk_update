@@ -6,9 +6,9 @@ import queue
 
 # --- Configuration ---
 MONGO_URI = "mongodb+srv://usr:pwd@your-cluster.mongodb.net/?w=1"
-DB_NAME = "rag"
-COLLECTION_NAME = "big2"
-BATCH_SIZE = 2000
+DB_NAME = "db_name"
+COLLECTION_NAME = "collection_name"
+BATCH_SIZE = 2000           # Set as high as your EC2/mongo can handle (try 2000/5000/10000...)
 MAX_QUEUE_SIZE = 24         # Allow for more queuing (tuneable)
 MAX_WORKERS = 16            # Set as high as your EC2/mongo can handle (try 8/12/16/24...)
 END_TOKEN = object()        # Unique object to signal end-of-data
